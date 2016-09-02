@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+<<<<<<< HEAD
 title: Your awesome title
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -23,6 +24,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+=======
+title: dgmouris a technical blog
+email: dgmouris@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Hi, my bame is Daniel Mouris and I'm a software developer in Edmonton, Alberta.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://dgmouris.github.io" # the base hostname & protocol for your site
+twitter_username: dgmouris
+github_username:  dgmouris
+>>>>>>> gh-pages
 
 # Build settings
 markdown: kramdown

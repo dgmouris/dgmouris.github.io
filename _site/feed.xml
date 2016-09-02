@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+<<<<<<< HEAD
     <title>Your awesome title</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
@@ -8,6 +9,15 @@
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>Tue, 30 Aug 2016 20:40:45 -0600</pubDate>
     <lastBuildDate>Tue, 30 Aug 2016 20:40:45 -0600</lastBuildDate>
+=======
+    <title>dgmouris a technical blog</title>
+    <description>Hi, my bame is Daniel Mouris and I'm a software developer in Edmonton, Alberta.
+</description>
+    <link>http://dgmouris.github.io/</link>
+    <atom:link href="http://dgmouris.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 30 Aug 2016 20:55:26 -0600</pubDate>
+    <lastBuildDate>Tue, 30 Aug 2016 20:55:26 -0600</lastBuildDate>
+>>>>>>> gh-pages
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -28,8 +38,13 @@
 
 </description>
         <pubDate>Tue, 30 Aug 2016 20:27:47 -0600</pubDate>
+<<<<<<< HEAD
         <link>http://example.com/blog/2016/08/30/welcome-to-jekyll.html</link>
         <guid isPermaLink="true">http://example.com/blog/2016/08/30/welcome-to-jekyll.html</guid>
+=======
+        <link>http://dgmouris.github.io/blog/2016/08/30/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://dgmouris.github.io/blog/2016/08/30/welcome-to-jekyll.html</guid>
+>>>>>>> gh-pages
         
         
         <category>blog</category>
