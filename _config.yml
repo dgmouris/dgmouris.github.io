@@ -1,40 +1,97 @@
 # Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-<<<<<<< HEAD
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
-=======
-title: dgmouris a technical blog
-email: dgmouris@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Hi, my bame is Daniel Mouris and I'm a software developer in Edmonton, Alberta.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dgmouris.github.io" # the base hostname & protocol for your site
-twitter_username: dgmouris
-github_username:  dgmouris
->>>>>>> gh-pages
+# Website settings
+title: "dgmouris  "
+description: "Dan Mouris's blog on technical things"
+keywords: "Jack,Jalpc,blog,Jekyll,github,gh-pages"
+baseurl: "/"
+url: "http://dgmouris.com"
+# url: "http://127.0.0.1:4000"
+
+# blog img path
+img_path: 'http://dgmouris.com/static/img/blog'
+
+# author
+author:
+  name: 'Dan'
+  first_name: 'Daniel'
+  last_name: 'Mouris'
+  email: 'dgmouris@gmail.com'
+  facebook_username: 'daniel.mouris'
+  github_username: 'dgmouris'
+  head_img: 'static/img/landing/profile.jpg'
+  linkedin_username: 'daniel-mouris-baa4b972'
+# social link
+dgmouris:
+  first_name: 'Daniel'
+  last_name: 'Mouris'
+  description: 'Programming enthusiast and animal lover.'
+  link: 'http://dgmouris.com'
+  email: 'dgmouris@gmail.com'
+
+# landing page
+landing:
+  home: 'Home'
+  about: 'About'
+  career: 'Career'
+  skills: 'Skills'
+  projects: 'Project'
+  blog: 'Blog'
+  link: 'Contact'
+
+# # my projects
+# project:
+#   saplatform:
+#     name: 'Saplatform'
+#     url: '/Jack614/saplatform'
+#     img: 'static/img/landing/saplatform.png'
+#   jalpc:
+#     name: 'Jalpc'
+#     url: '/Jack614/jalpc_jekyll_theme'
+#     img: 'static/img/landing/jekyll.png'
+#   angularjs:
+#     name: 'Jalpc-A'
+#     url: '/Jack614/Jalpc-A'
+#     img: 'static/img/landing/angularjs.png'
+#   Rsser:
+#     name: 'Rsser'
+#     url: '/Jack614/Rsser'
+#     img: 'static/img/landing/rsser.png'
+
+# blog index
+index:
+  home: 'Home'
+  blog: 'Blog'
+  python: 'Python'
+  linux: 'Linux'
+  html: 'HTML'
+  database: 'Database'
+  mac: 'Mac'
+  life: 'Life'
+
+# donate
+donate:
+  wechat: 'static/img/pay/wechat.png'
+  alipay: 'static/img/pay/alipay.png'
+
+# share
+bshare:
+  uuid: 513f778e-a8f7-4c20-9ec2-d29cc2328d75
+
+# baidu analytics
+ba:
+  uuid: 317acca9ef9255b934e46371e471431d
+
+# google analytics
+ga:
+  id: UA-83644649-1
 
 # Build settings
+encoding: "utf-8"
+
+# other settings
+highlighter: rouge
 markdown: kramdown
-theme: minima
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
