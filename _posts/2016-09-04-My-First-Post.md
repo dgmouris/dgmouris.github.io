@@ -19,9 +19,9 @@ All of the content and any opinions on this blog are my own and do not the opini
 As a convention I will be using the following formatting in my blog to make things easier for people to under stand.
 
 Linux and Bash Scripts
-```
+{% highlight bash %}
 echo 'Welcome to my blog'
-```
+{% endhighlight %}
 
 Python and Django
 {% highlight python %}
