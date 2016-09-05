@@ -127,7 +127,7 @@ permalink: /
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
                 <p><span data-i18n="about_me.des">
-                    I am an an engineer who specializes in python and web development, server configuration (ubuntu + nginx), ansible, aws and automating of those aformentioned tasks.
+                    I am an an engineer who specializes in python and web development with Django, server configuration (ubuntu + nginx), ansible, aws and automating of those aformentioned tasks.
                     As well I love learning new things and implementing better techniques how to solve problems. I live in Edmonton, Alberta with my girlfriend and two cats.
                 </span></p>
             </div>
@@ -209,7 +209,7 @@ permalink: /
         <div class="row features-block">
           <div class="row">
             <div class="col-lg-1 col-lg-offset-2 wow fadeInRight">
-              <p>Python</p>
+              <p>Python and Django</p>
             </div>
             <div class="col-lg-7 wow fadeInRight">
                 <div class="progress progress-bar-default">
@@ -270,7 +270,7 @@ permalink: /
     </div>
 </section>
 
-<section id="blog" class="navy-section testimonials" style="margin-top: 0">
+<section id="blog" class="navy-section testimonials" >
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center wow zoomIn" id="i18_blog">
@@ -400,21 +400,6 @@ permalink: /
                 $('#i18_link').i18n();
                 // $('.set_en').addClass('active');
                 // $('.set_cn').removeClass('active');
-            });
-        });
-        $('.set_cn').on('click', function (){
-            i18n.setLng('cn', function(){
-                $('.i18container').i18n();
-                // $('#i18_title').i18n();
-                $('#i18_navbar').i18n();
-                $('#i18_about_me').i18n();
-                $('#i18_skills').i18n();
-                $('#i18_projects').i18n();
-                $('#i18_career').i18n();
-                $('#i18_blog').i18n();
-                $('#i18_link').i18n();
-                // $('.set_cn').addClass('active');
-                // $('.set_en').removeClass('active');
             });
         });
     });
