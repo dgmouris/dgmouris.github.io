@@ -24,17 +24,17 @@ echo 'Welcome to my blog'
 ```
 
 Python and Django
-``` python
+```python
 print("Welcome to my blog")
 ```
 
 Javascript and Jquery
-``` javascript
+```javascript
 console.log("Welcome to my blog")
 ```
 
 MySQL and PostGreSQL
-``` sql
+```sql
 Create table blog(
   post_name text not null
 );
