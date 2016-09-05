@@ -29,13 +29,27 @@
   <link href="{{"bower_components/jquery.gritter/css/jquery.gritter.css"| prepend: site.baseurl }}" rel="stylesheet">
   <link rel="stylesheet" href="{{ "search/css/cb-search.css" | prepend: site.baseurl }}">
 
-  <!-- Custom styles for this template -->
   <link href="{{"static/css/style.min.css"| prepend: site.baseurl }}" rel="stylesheet">
   <link href="{{"static/css/pygments.css"| prepend: site.baseurl }}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+
   <style>
     pre {
       background-color: #333;
     }
+    .carousel-control.overlay {
+      color:#fff;
+      opacity:1;
+      position:absolute;
+      text-align:center;
+      width:100%;
+      z-index:12;
+      top:47%;
+      left:0;
+      text-align:center;
+      display:block;
+    }
+
   </style>
   <!-- Scripts -->
   <script src="{{"bower_components/jquery/dist/jquery.min.js"| prepend: site.baseurl }}"></script>
