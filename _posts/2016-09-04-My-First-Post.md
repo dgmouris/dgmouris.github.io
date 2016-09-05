@@ -24,14 +24,13 @@ echo 'Welcome to my blog'
 ```
 
 Python and Django
-```python
+{% highlight python %}
 print("Welcome to my blog")
-```
-
+{% endhighlight %}
 Javascript and Jquery
-```javascript
+{% highlight javascript %}
 console.log("Welcome to my blog")
-```
+{% endhighlight %}
 
 MySQL and PostGreSQL
 ```sql
