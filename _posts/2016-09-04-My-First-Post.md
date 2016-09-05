@@ -33,12 +33,12 @@ console.log("Welcome to my blog")
 {% endhighlight %}
 
 MySQL and PostGreSQL
-```sql
+{% highlight sql %}
 Create table blog(
   post_name text not null
 );
 insert into blog values ('Welcome to my blog');
 select post_name from blog;
-```
+{% endhighlight %}
 
 Thank you very much and feel free to contact me any time.
