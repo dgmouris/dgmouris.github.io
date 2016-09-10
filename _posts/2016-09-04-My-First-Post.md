@@ -6,7 +6,7 @@ desc: "My First Post"
 keywords: "Test, dgmouris, tech"
 categories: [test]
 tags: [First post,welcome]
-icon: icon-phone-gap
+icon: icon-shell
 ---
 
 Hello people who will be reading my blog.
