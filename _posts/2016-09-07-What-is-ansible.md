@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is Ansible?"
-date:   2016-09-07
+date:   2016-09-11
 desc: "Short description of ansible"
 keywords: "Ansible, cloud, what is ansible, automation"
 categories: [ansible]
@@ -19,7 +19,7 @@ Configuration management of your infrastructure is one of the most essential par
 
 One of the greatest benefits of Ansible is that it can be made responsible for everything that is related to your servers, databases and networking infrastructure. Ansible also gives you the flexibility to do manual configuration later on. It does not depend on a single "Master Server" because it sends the same configuration to all servers.
 
-Another great benefit of Ansible is that the barrier to entry is fairly low. If you've read a yaml file before, or even if you haven't, it's pretty easy to follow. Below is an example of a yaml file. 
+Another great benefit of Ansible is that the barrier to entry is fairly low. If you've read a yaml file before, or even if you haven't, it's pretty easy to follow. Below is an example of a yaml file.
 
 {% highlight yaml%}
 ---
@@ -59,4 +59,6 @@ Here's how Ansible differs from Puppet and Chef.
 
 In future posts, I will go into more elaboration about how Ansible differs from Salt, Jenkins and Fabric.
 
-In conclusion this is a short introduction to what ansible is, and what are similar technologies to ansible. I hope you enjoyed my post, if you want to reach out please contact me via email or linkedin.
+This was a short introduction to what ansible is, and what are similar technologies to ansible. I will be posting more tutorials on ansible as well as other technology topics.
+
+I hope you enjoyed my post, if you want to reach out please contact me via email or linkedin.
