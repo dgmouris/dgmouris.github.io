@@ -5,9 +5,77 @@
     <description>Dan Mouris's blog on technical things</description>
     <link>http://dgmouris.com//</link>
     <atom:link href="http://dgmouris.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Sep 2016 14:26:45 -0600</pubDate>
-    <lastBuildDate>Mon, 05 Sep 2016 14:26:45 -0600</lastBuildDate>
+    <pubDate>Sat, 10 Sep 2016 17:33:47 -0600</pubDate>
+    <lastBuildDate>Sat, 10 Sep 2016 17:33:47 -0600</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>What is Ansible?</title>
+        <description>&lt;h3 id=&quot;what-is-ansible&quot;&gt;What is Ansible?&lt;/h3&gt;
+
+&lt;p&gt;Ansible is a platform for automation, configuration management and deployments of your web/cloud infrastructure. Ansible uses playbooks to deploy, manage and configure anything that has an ssh connection.&lt;/p&gt;
+
+&lt;p&gt;Configuration management of your infrastructure is one of the most essential parts of DevOps to ensure continous delivery of your code. Ansible makes configuration management a lot easier, since you can keep all of your configuration for an envrionment in a single git repository.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-are-the-benefits-of-ansible&quot;&gt;What are the benefits of Ansible?&lt;/h3&gt;
+
+&lt;p&gt;One of the greatest benefits of Ansible is that it can be made responsible for everything that is related to your servers, databases and networking infrastructure. Ansible also gives you the flexibility to do manual configuration later on. It does not depend on a single “Master Server” because it sends the same configuration to all servers.&lt;/p&gt;
+
+&lt;p&gt;Another great benefit of Ansible is that the barrier to entry is fairly low. If you’ve read a yaml file before, or even if you haven’t, it’s pretty easy to follow. Below is an example of a yaml file.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dan&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;cats&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ghost&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;gambit&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;amber&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;cats&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;mocha&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;topaz&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;what-are-the-other-tools-in-the-ansible-space&quot;&gt;What are the other tools in the Ansible space?&lt;/h3&gt;
+&lt;p&gt;The following list includes deployment configuration management tools like Ansible:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Jenkins
+- Salt
+- Puppet
+- Chef
+- Fabric
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Although the tools in the above list compete with Ansible in some respect, they can also be used with Ansible for an infrastructure deployment. Many times Ansible is used in tandem with these tools for a deployment.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-does-ansible-differ-to-these-tools&quot;&gt;How does Ansible differ to these tools?&lt;/h3&gt;
+&lt;p&gt;Here’s how Ansible differs from Puppet and Chef.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Puppet and Chef contain a centralized master/controller server setup that is responsbile for the deployments. Since Ansible only uses ssh, any server/machine at any time can assume that role.
+- Ansible uses the &quot;push&quot; method for configuration management. There are two benefits to this.
+	1. Does not need any client-side installs.
+	2. Does not need a master server.
+- Ansible uses a top to bottom approach (executes sequentially), unlike puppet which does not execute commands as they appear in the manifest.
+- Syntax is based on yaml, unlike Puppet that uses custom DSL. This makes configurations easier to read.
+- Ansible is built with Python, where Chef and Puppet are built with Ruby.
+- Chef breaks it's deployment process into two steps. The first is the compilation phase and the second is execution. By default, state is stored during compilation phase unless the &quot;lazy&quot; option is used.*****
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In future posts, I will go into more elaboration about how Ansible differs from Salt, Jenkins and Fabric.&lt;/p&gt;
+
+&lt;p&gt;In conclusion this is a short introduction to what ansible is, and what are similar technologies to ansible. I hope you enjoyed my post, if you want to reach out please contact me via email or linkedin.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 07 Sep 2016 00:00:00 -0600</pubDate>
+        <link>http://dgmouris.com//ansible/2016/09/07/What-is-ansible.html</link>
+        <guid isPermaLink="true">http://dgmouris.com//ansible/2016/09/07/What-is-ansible.html</guid>
+        
+        <category>First post</category>
+        
+        <category>welcome</category>
+        
+        
+        <category>ansible</category>
+        
+      </item>
     
       <item>
         <title>My First Post</title>
@@ -15,9 +83,9 @@
 
 &lt;p&gt;The purpose of this blog will be to share my experiences in being a developer, tips as well as tutorials to try to help and give back.&lt;/p&gt;
 
-&lt;p&gt;All of the content and any opinions on this blog are my own and do not the opinions of my employers.&lt;/p&gt;
+&lt;p&gt;All of the content and any opinions on this blog are my own and do not reflect the opinions of my employers.&lt;/p&gt;
 
-&lt;p&gt;As a convention I will be using the following formatting in my blog to make things easier for people to under stand.&lt;/p&gt;
+&lt;p&gt;As a convention, I will be using the following formatting in my blog to make things easier for people to understand.&lt;/p&gt;
 
 &lt;p&gt;Linux and Bash Scripts&lt;/p&gt;
 
