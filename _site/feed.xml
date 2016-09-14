@@ -5,8 +5,8 @@
     <description>Dan Mouris's blog on technical things</description>
     <link>http://dgmouris.com//</link>
     <atom:link href="http://dgmouris.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Sep 2016 10:21:33 -0600</pubDate>
-    <lastBuildDate>Wed, 14 Sep 2016 10:21:33 -0600</lastBuildDate>
+    <pubDate>Wed, 14 Sep 2016 10:24:37 -0600</pubDate>
+    <lastBuildDate>Wed, 14 Sep 2016 10:24:37 -0600</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -82,9 +82,9 @@
 
 &lt;p&gt;Hopefully you have enjoyed my overview of Yaml; the above should give you enough to begin to understand the Yaml formatting. In the future, I will be looking at how to use Yaml variables from other filenames (for when you come across them in Ansible). Now, if you go look at an Ansible Yaml file, you might not be able to understand all of the modules but you should be able to follow along. Hopefully, by keeping up with future blog posts for this tutorial, you’ll learn more how Ansible is great and how it will help you.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 13 Sep 2016 00:00:00 -0600</pubDate>
-        <link>http://dgmouris.com//blog/2016/09/13/Yaml-Explained.html</link>
-        <guid isPermaLink="true">http://dgmouris.com//blog/2016/09/13/Yaml-Explained.html</guid>
+        <pubDate>Wed, 14 Sep 2016 00:00:00 -0600</pubDate>
+        <link>http://dgmouris.com//blog/2016/09/14/Yaml-Explained.html</link>
+        <guid isPermaLink="true">http://dgmouris.com//blog/2016/09/14/Yaml-Explained.html</guid>
         
         <category>First post</category>
         

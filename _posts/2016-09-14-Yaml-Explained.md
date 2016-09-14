@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Yaml Explained"
-date:   2016-09-13
+date:   2016-09-14
 desc: "How to create and write Yaml files."
-keywords: "Ansible, cloud, what is Ansible, automation,Yaml"
+keywords: "Ansible, cloud, yaml explained, automation,Yaml"
 categories: [blog]
 tags: [First post,welcome,Ansible,Yaml]
 icon: icon-python
