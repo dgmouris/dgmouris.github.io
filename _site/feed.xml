@@ -5,8 +5,8 @@
     <description>Dan Mouris's blog on technical things</description>
     <link>http://dgmouris.com//</link>
     <atom:link href="http://dgmouris.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Sep 2016 10:24:37 -0600</pubDate>
-    <lastBuildDate>Wed, 14 Sep 2016 10:24:37 -0600</lastBuildDate>
+    <pubDate>Wed, 14 Sep 2016 10:37:15 -0600</pubDate>
+    <lastBuildDate>Wed, 14 Sep 2016 10:37:15 -0600</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -28,14 +28,9 @@
 &lt;span class=&quot;s&quot;&gt;Age&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;26&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;CurrentDate&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;13/09/2016&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;To create a key with a multiline value, you need to add a “&lt;/td&gt;
-      &lt;td&gt;” (normally named pipe) after the key value. Below is an example of this:&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;In case you aren’t familiar with a key value pair, in the above example everything before the colon is a key and everything after the colon is the value.&lt;/p&gt;
+
+&lt;p&gt;To create a key with a multiline value, you need to add a | (normally named pipe) after the key value. Below is an example of this:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#Yay my first Yaml file!&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Daniel Mouris&lt;/span&gt;
@@ -49,13 +44,13 @@
 &lt;p&gt;Ansible does a great job at detecting Yaml datatypes, but you might want to be specific. Below are examples of datatypes that you can specify in Yaml:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#Yay my first Yaml file!&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;integer-example&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;string-exmpale&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;97&quot;&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;float-example&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97.0&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;string-non-ambiguous&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;!!str&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;float-non-ambiguous&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;!!float&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;integer-example&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# this is an integer&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;string-exmpale&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;97&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# this is a string&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;float-example&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97.0&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# this is a float&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;string-non-ambiguous&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;!!str&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# explicitly set as string&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;float-non-ambiguous&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;!!float&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# explicitly set as a float&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;boolean-true&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Yes&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#treats yes like a true statement in code&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;another-string-example&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;No sir, the oilers lost today.&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# treats yes and no like a string&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;s&quot;&gt;another-string-example&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;No sir, the oilers lost today.&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# treats yes and no like a string instead of boolean&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;As you can see, Yaml tries to be as intuitive as possible when evaluating your variable names.&lt;/p&gt;
 
@@ -85,8 +80,6 @@
         <pubDate>Wed, 14 Sep 2016 00:00:00 -0600</pubDate>
         <link>http://dgmouris.com//blog/2016/09/14/Yaml-Explained.html</link>
         <guid isPermaLink="true">http://dgmouris.com//blog/2016/09/14/Yaml-Explained.html</guid>
-        
-        <category>First post</category>
         
         <category>welcome</category>
         

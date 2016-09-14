@@ -5,7 +5,7 @@ date:   2016-09-14
 desc: "How to create and write Yaml files."
 keywords: "Ansible, cloud, yaml explained, automation,Yaml"
 categories: [blog]
-tags: [First post,welcome,Ansible,Yaml]
+tags: [welcome,Ansible,Yaml]
 icon: icon-python
 ---
 
@@ -30,8 +30,9 @@ Age: 26
 CurrentDate: 13/09/2016
 {% endhighlight %}
 
+In case you aren't familiar with a key value pair, in the above example everything before the colon is a key and everything after the colon is the value.
 
-To create a key with a multiline value, you need to add a "|" (normally named pipe) after the key value. Below is an example of this:
+To create a key with a multiline value, you need to add a \| (normally named pipe) after the key value. Below is an example of this:
 
 {% highlight yaml %}
 --- #Yay my first Yaml file!
@@ -49,13 +50,13 @@ Ansible does a great job at detecting Yaml datatypes, but you might want to be s
 
 {% highlight yaml %}
 --- #Yay my first Yaml file!
-integer-example: 97
-string-exmpale: "97"
-float-example: 97.0
-string-non-ambiguous: !!str 97
-float-non-ambiguous: !!float 97
+integer-example: 97 # this is an integer
+string-exmpale: "97" # this is a string
+float-example: 97.0 # this is a float
+string-non-ambiguous: !!str 97 # explicitly set as string
+float-non-ambiguous: !!float 97 # explicitly set as a float
 boolean-true: Yes #treats yes like a true statement in code
-another-string-example: No sir, the oilers lost today. # treats yes and no like a string
+another-string-example: No sir, the oilers lost today. # treats yes and no like a string instead of boolean
 {% endhighlight %}
 
 As you can see, Yaml tries to be as intuitive as possible when evaluating your variable names.
