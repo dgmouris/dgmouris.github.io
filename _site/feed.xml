@@ -5,8 +5,8 @@
     <description>Dan Mouris's blog on technical things</description>
     <link>http://dgmouris.com//</link>
     <atom:link href="http://dgmouris.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Sep 2016 10:09:27 -0600</pubDate>
-    <lastBuildDate>Wed, 14 Sep 2016 10:09:27 -0600</lastBuildDate>
+    <pubDate>Wed, 14 Sep 2016 10:21:33 -0600</pubDate>
+    <lastBuildDate>Wed, 14 Sep 2016 10:21:33 -0600</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -49,7 +49,7 @@
 &lt;p&gt;Ansible does a great job at detecting Yaml datatypes, but you might want to be specific. Below are examples of datatypes that you can specify in Yaml:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#Yay my first Yaml file!&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;integer-example&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97list&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;integer-example&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;string-exmpale&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;97&quot;&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;float-example&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97.0&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;string-non-ambiguous&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;!!str&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;97&lt;/span&gt;

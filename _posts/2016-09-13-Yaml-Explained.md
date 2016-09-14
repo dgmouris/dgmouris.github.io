@@ -49,7 +49,7 @@ Ansible does a great job at detecting Yaml datatypes, but you might want to be s
 
 {% highlight yaml %}
 --- #Yay my first Yaml file!
-integer-example: 97list
+integer-example: 97
 string-exmpale: "97"
 float-example: 97.0
 string-non-ambiguous: !!str 97
