@@ -2,15 +2,14 @@
 layout: post
 title:  "Yaml Explained"
 date:   2016-09-13
-desc: "short"
+desc: "How to create and write Yaml files."
 keywords: "Ansible, cloud, what is Ansible, automation,Yaml"
 categories: [blog]
 tags: [First post,welcome,Ansible,Yaml]
 icon: icon-python
 ---
 
-Yaml stands for "Yaml Ain't Markup Language" and is the core of Ansible and writing playbooks. Almost all of Ansible "code" for configuration management is written in Yaml
-, so I wanted to use this blog post to cover the basics!
+Yaml stands for "Yaml Ain't Markup Language" and is the core of Ansible and writing playbooks. Almost all of Ansible "code" for configuration management is written in Yaml, so I wanted to use this blog post to cover the basics.
 
 In this tutorial I will cover how files are formatted, and how to use lists, key value pairs and other data structures in a Yaml file.
 
@@ -32,7 +31,7 @@ CurrentDate: 13/09/2016
 {% endhighlight %}
 
 
-To create a key with a multiline value, you need to add a " (normally named pipe)" after the key value. Below is an example of this:
+To create a key with a multiline value, you need to add a "|" (normally named pipe) after the key value. Below is an example of this:
 
 {% highlight yaml %}
 --- #Yay my first Yaml file!
@@ -75,10 +74,10 @@ Next we can look at lists. Lists in Yaml are pretty intuitive and are denoted wi
     - topaz
 {% endhighlight %}
 
-As you can see above, there are dashes in front of the name as well as  below cats. The dashes in front of name show that everthing with that indentation level will be in that list item. This means that ghost and gambit are cats, that are in the same group as dan. Ansible uses lists like the above (except with more meaningful values) to perform all of the tasks to create your configuration on your server/database/networking service that you're using.
+As you can see above, there are dashes in front of _name_ as well as  below _cats_. The dashes in front of _name_ show that everthing with that indentation level will be in that list item. This means that _ghost_ and _gambit_ are _cats_, that are in the same group as _dan_. Ansible uses lists like the above (except with more meaningful values) to perform all of the tasks to create your configuration on your server/database/networking service that you're using.
 
-The final thing that I will be covering in this short tutorial is including files in Yaml. Below shows a Yaml file that includes two files, a-different-Yaml
--file.yml and another-Yaml-file.yml.
+The final thing that I will be covering in this short tutorial is including files in Yaml. Below shows a Yaml file that includes two files, _a-different-Yaml
+-file.yml_ and _another-Yaml-file.yml_.
 
 {% highlight yaml %}
 ---
@@ -86,4 +85,4 @@ The final thing that I will be covering in this short tutorial is including file
 - include: another-Yaml-file.yml
 {% endhighlight %}
 
-Hopefully you have enjoyed my overview of Yaml; the above should give you enough to begin to understand the Yaml formatting. In the future, I will be looking at how to use Yaml variables from other filenames (for when you come across them in Ansible). Now, if you go look at an Ansible Yaml file, you might not be able to understand all of the modules but you should be able to follow along.  **** add sentence, something like: "Hopefully, by keeping up with future blog posts for this tutorial, you'll become an Ansible pro in no time!"
+Hopefully you have enjoyed my overview of Yaml; the above should give you enough to begin to understand the Yaml formatting. In the future, I will be looking at how to use Yaml variables from other filenames (for when you come across them in Ansible). Now, if you go look at an Ansible Yaml file, you might not be able to understand all of the modules but you should be able to follow along. Hopefully, by keeping up with future blog posts for this tutorial, you'll learn more how Ansible is great and how it will help you.

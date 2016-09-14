@@ -5,14 +5,13 @@
     <description>Dan Mouris's blog on technical things</description>
     <link>http://dgmouris.com//</link>
     <atom:link href="http://dgmouris.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 13 Sep 2016 21:54:05 -0600</pubDate>
-    <lastBuildDate>Tue, 13 Sep 2016 21:54:05 -0600</lastBuildDate>
+    <pubDate>Wed, 14 Sep 2016 10:09:27 -0600</pubDate>
+    <lastBuildDate>Wed, 14 Sep 2016 10:09:27 -0600</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Yaml Explained</title>
-        <description>&lt;p&gt;Yaml stands for “Yaml Ain’t Markup Language” and is the core of Ansible and writing playbooks. Almost all of Ansible “code” for configuration management is written in Yaml
-, so I wanted to use this blog post to cover the basics!&lt;/p&gt;
+        <description>&lt;p&gt;Yaml stands for “Yaml Ain’t Markup Language” and is the core of Ansible and writing playbooks. Almost all of Ansible “code” for configuration management is written in Yaml, so I wanted to use this blog post to cover the basics.&lt;/p&gt;
 
 &lt;p&gt;In this tutorial I will cover how files are formatted, and how to use lists, key value pairs and other data structures in a Yaml file.&lt;/p&gt;
 
@@ -29,7 +28,14 @@
 &lt;span class=&quot;s&quot;&gt;Age&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;26&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;CurrentDate&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;13/09/2016&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;To create a key with a multiline value, you need to add a “ (normally named pipe)” after the key value. Below is an example of this:&lt;/p&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;To create a key with a multiline value, you need to add a “&lt;/td&gt;
+      &lt;td&gt;” (normally named pipe) after the key value. Below is an example of this:&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#Yay my first Yaml file!&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Daniel Mouris&lt;/span&gt;
@@ -65,16 +71,16 @@
     &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;mocha&lt;/span&gt;
     &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;topaz&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;As you can see above, there are dashes in front of the name as well as  below cats. The dashes in front of name show that everthing with that indentation level will be in that list item. This means that ghost and gambit are cats, that are in the same group as dan. Ansible uses lists like the above (except with more meaningful values) to perform all of the tasks to create your configuration on your server/database/networking service that you’re using.&lt;/p&gt;
+&lt;p&gt;As you can see above, there are dashes in front of &lt;em&gt;name&lt;/em&gt; as well as  below &lt;em&gt;cats&lt;/em&gt;. The dashes in front of &lt;em&gt;name&lt;/em&gt; show that everthing with that indentation level will be in that list item. This means that &lt;em&gt;ghost&lt;/em&gt; and &lt;em&gt;gambit&lt;/em&gt; are &lt;em&gt;cats&lt;/em&gt;, that are in the same group as &lt;em&gt;dan&lt;/em&gt;. Ansible uses lists like the above (except with more meaningful values) to perform all of the tasks to create your configuration on your server/database/networking service that you’re using.&lt;/p&gt;
 
-&lt;p&gt;The final thing that I will be covering in this short tutorial is including files in Yaml. Below shows a Yaml file that includes two files, a-different-Yaml
--file.yml and another-Yaml-file.yml.&lt;/p&gt;
+&lt;p&gt;The final thing that I will be covering in this short tutorial is including files in Yaml. Below shows a Yaml file that includes two files, &lt;em&gt;a-different-Yaml
+-file.yml&lt;/em&gt; and &lt;em&gt;another-Yaml-file.yml&lt;/em&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
 &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;a-different-Yaml-file.yml&lt;/span&gt;
 &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;another-Yaml-file.yml&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Hopefully you have enjoyed my overview of Yaml; the above should give you enough to begin to understand the Yaml formatting. In the future, I will be looking at how to use Yaml variables from other filenames (for when you come across them in Ansible). Now, if you go look at an Ansible Yaml file, you might not be able to understand all of the modules but you should be able to follow along.  &lt;em&gt;**&lt;/em&gt; add sentence, something like: “Hopefully, by keeping up with future blog posts for this tutorial, you’ll become an Ansible pro in no time!”&lt;/p&gt;
+&lt;p&gt;Hopefully you have enjoyed my overview of Yaml; the above should give you enough to begin to understand the Yaml formatting. In the future, I will be looking at how to use Yaml variables from other filenames (for when you come across them in Ansible). Now, if you go look at an Ansible Yaml file, you might not be able to understand all of the modules but you should be able to follow along. Hopefully, by keeping up with future blog posts for this tutorial, you’ll learn more how Ansible is great and how it will help you.&lt;/p&gt;
 </description>
         <pubDate>Tue, 13 Sep 2016 00:00:00 -0600</pubDate>
         <link>http://dgmouris.com//blog/2016/09/13/Yaml-Explained.html</link>
