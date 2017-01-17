@@ -28,6 +28,10 @@
   },
   "career":{
     "my_career": "My Career",
+    "organicbox": "The Organic Box",
+    "organicbox_des": "Currently I work at the Organic Box. I develop their E-commerce site as well as develop their backend, the warehouse management system. I also maintain their infrastructure to be PCI compliant and use ansible to automate server, database and networking infrastructure on Amazon Web Services.",
+    "organicbox_date":"Oct. 2016",
+    "organicbox_job":"Python/Django Developer and Dev Ops",
     "strathcom": "Strathcom Media",
     "strathcom_des": "Currently I am at Strathcom Media as a python Developer for internal systems. Along with development I use Ansible to automate server, database and networking infrastructure on Amazon Web Services.",
     "strathcom_date": "Jul. 2016",
